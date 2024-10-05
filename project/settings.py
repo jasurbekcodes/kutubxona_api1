@@ -82,6 +82,15 @@ DATABASES = {
     }
 }
 
+# Email settings
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'  # Gmail SMTP server
+EMAIL_PORT = 587  # TLS port
+EMAIL_USE_TLS = True  # TLS o'rnatish
+EMAIL_HOST_USER = 'jasuribodullayev0103@gmail.com'  # Sizning emailingiz
+EMAIL_HOST_PASSWORD = '0830jasur'  # Email parolingiz
+DEFAULT_FROM_EMAIL = 'jasuribodullayev0103@gmail.com'  # Jo'natuvchi emaili
+
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
