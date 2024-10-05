@@ -8,5 +8,5 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         send_mail('Test mail', 'this is a test email',
-                  'jasuribodullayev0103@gmail.com', ['jasuribodullayev0103@gmail.com'], fail_silently=False)
+                  'askarjon.abdullayev@gmail.com', ['askarjon.abdullayev@gmail.com'], fail_silently=False)
         self.stdout.write(self.style.SUCCESS("Email jo'natildi"))

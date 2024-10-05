@@ -84,12 +84,12 @@ DATABASES = {
 
 # Email settings
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'  # Gmail SMTP server
-EMAIL_PORT = 587  # TLS port
-EMAIL_USE_TLS = True  # TLS o'rnatish
-EMAIL_HOST_USER = 'jasuribodullayev0103@gmail.com'  # Sizning emailingiz
-EMAIL_HOST_PASSWORD = '0830jasur'  # Email parolingiz
-DEFAULT_FROM_EMAIL = 'jasuribodullayev0103@gmail.com'  # Jo'natuvchi emaili
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
+EMAIL_HOST_USER = 'askarjon.abdullayev'
+EMAIL_HOST_PASSWORD = 'kdrerwbklpoooxlp'
 
 
 # Password validation
