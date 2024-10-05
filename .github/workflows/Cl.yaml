@@ -13,11 +13,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Set up Python 3.11
-        uses: actions/setup-python@v2
+      - uses: actions/checkout@v3
+      - name: Set up Python 3.11.1
+        uses: actions/setup-python@v3
         with:
-          python-version: "3.11"
+          python-version: "3.11.1"
       - name: Install dependencies
         run: |
           python3 -m pip install --upgrade pip setuptools wheel
@@ -34,7 +34,7 @@ jobs:
         run: |
           python manage.py test
 
-      - name: Email jo'natsh
+      - name: Email jo'natish
         env:
           SECRET_KEY: ${{secrets.SECRET_KEY}}
           DEBUG: ${{secrets.DEBUG}}
