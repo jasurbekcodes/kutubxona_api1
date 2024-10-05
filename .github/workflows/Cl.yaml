@@ -20,9 +20,8 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install dependencies
+      - name: Install Python dependencies
         run: |
-          npm install
           python3 -m pip install --upgrade pip setuptools wheel
           pip install -r requirements.txt
 
@@ -76,5 +75,6 @@ jobs:
 
       - name: Deploy to Server
         run: |
-          ssh root@143.198.183.137 "cd ../home/kutubxona_api1 && git pull && ./deploy.sh"
+          ssh root@143.198.183.137 "cd ../home/kutubxona_api1 && git pull && chmod +x ./deploy.sh && ./deploy.sh"
         shell: bash
+
